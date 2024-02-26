@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="cdn.jsdelivr.net_npm_swiper@10.3.1_swiper-bundle.min.css">
+
+
+</head>
+
+<style>
+    /* .publications {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 120px 0;
+    } */
+
+    .title {
+        font-size: 28px;
+        text-transform: uppercase;
+        color: #1524e6;
+        text-align: center;
+        margin: 55px 0;
+    }
+
+    .swipper-container {
+        padding: 50px 0;
+        max-width: 1200px;
+        margin: 5px auto;
+        /* width: 100%; */
+        /* border: 1px solid black; */
+    }
+
+    .slide-container {
+        margin: 0 30px;
+        overflow: hidden;
+    }
+
+    .card {
+        width: 500px;
+        margin: 60px auto;
+        padding: 5px;
+        border: 1px solid black;
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        background-color: rgb(236, 250, 250);
+        border-radius: 10px;
+    }
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+
+    .pub-details {
+        width: 100%;
+    }
+
+    .pub-details span {
+        margin-top: 15px;
+        color: #f98c15;
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+    .pub-details h3 {
+        margin-top: 15px;
+        color: #1524e6;
+        font-weight: 600;
+        text-decoration: none;
+        transition: all ease 0.3s;
+    }
+
+    .pub-details h3:hover {
+        color: #3c3cda;
+        opacity: 0.7;
+        transition: all ease 0.3s;
+    }
+
+    .pub-details p {
+        margin-top: 10px;
+        line-height: 25px;
+        font-size: 16px;
+        color: #0a0a14;
+    }
+
+    .pub-details button {
+        width: 120px;
+        color: #f98c15;
+        margin: 15px 0;
+        border-radius: 5px;
+        padding: 7px 12px;
+        text-align: center;
+        font-weight: 600;
+        text-decoration: none;
+        border: 1px solid #f98c15;
+    }
+
+    .pub-details button a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .swipper-navBtn {
+        color: #000;
+        width: 40px;
+        height: 40px;
+        margin-top: 150px;
+        background-color: #fff;
+        border-radius: 50%;
+    }
+
+    .swipper-navBtn::before,
+    .swipper-navBtn::after {
+        font-size: 18px;
+    }
+
+    .swiper-pagination-bullet {
+        background-color: #f98c15;
+    }
+
+    .card-wrapper {
+        margin: -50px 0;
+    }
+
+    @media screen and (max-width: 768px) {
+        .swipper-navBtn {
+            display: none;
+        }
+    }
+</style>
+
+<body>
+    <header>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html" class="active">Accueil</a></li>
+                <li><a href="about.html">A propos</a></li>
+                <li><a href="resume.html">Parcours</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger"></div>
+    </header>
+    <!-- <h2 class="title">Mes Publications</h2> -->
+    <section class="publications">
+        <div class="swipper-container swipper">
+            <h2 class="title">Mes Publications</h2>
+            <div class="slide-container">
+                <div class="card-wrapper swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <img src="image/pub (6).jpg" alt="">
+                        <div class="pub-details">
+                            <span>Juin, 4 2021</span>
+                            <h3> Peut-on gagner de l'argent sans le marketing et la vente? </h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, maxime laudantium? Quae
+                                eaque harum cumque corporis.</p>
+                            <button><a href="#">Lire plus</a></button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <img src="image/pub (2).jpg" alt="">
+                        <div class="pub-details">
+                            <span>Juin, 9 2021</span>
+                            <h3>Importance de la vente dans tous les domaines de la vie </h3>
+                            <p>Quelle compréhension de l'univers des réseaux sociaux? Quels sont les avantages et les
+                                inconvénients de notre présence sur les réseaux sociaux? Comment concilier la présence
+                                sur
+                                les réseaux sociaux et les exigences de perfomance professionnelle.</p>
+                            <button><a href="#">Lire plus</a></button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <img src="image/pub (3).jpg" alt="">
+                        <div class="pub-details">
+                            <span>Juin, 16 2021</span>
+                            <h3>Le summum du marketing et de la vente </h3>
+                            <p> Peut-on vendre à mauvais escient? Parfaitement ! </p>
+                            <button><a href="#">Lire plus</a></button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <img src="image/pub (4).jpg" alt="">
+                        <div class="pub-details">
+                            <span>Juin, 23 2021</span>
+                            <h3>Les gens (clients) veulent être compris </h3>
+                            <p>Comment persuader autrui de travailler pour moi, de suivre mes conseils, d'acheter
+                                mon produit ou de suivre mes enseignements?</p>
+                            <button><a href="#">Lire plus</a></button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <img src="image/pub (5).jpg" alt="">
+                        <div class="pub-details">
+                            <span>Juin, 30 2021</span>
+                            <h3>Ecouter et comprendre (part1) : une différence qui est une clé en vente </h3>
+                            <p>Voici un exemple simple dont l'objectif est d'aider à saisir la différence entre
+                                écouter et se faire comprendre...</p>
+                            <button><a href="#">Lire plus</a></button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <img src="image/pub (6).jpg" alt="">
+                        <div class="pub-details">
+                            <span>Juillet, 7 2021</span>
+                            <h3> Ecouter et comprendre (part2) : une différence qui est une clé en vente </h3>
+                            <p>Dans notre publication précédente, nous avions engagé la réflexion sur l'importance
+                                d'écouter et de comprendre le client pour lui donner satisfaction...</p>
+                            <button><a href="#">Lire plus</a></button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <img src="image/pub (4).jpg" alt="">
+                        <div class="pub-details">
+                            <span>Juillet, 15 2021</span>
+                            <h3>Vendez aux gens ce qu'ils veulent </h3>
+                            <p>Souvenez-vous régulièrement de cette phrase : "le plus souvent, les gens achètent ce
+                                dont ils ont envie et non ce dont ils ont besoin"...</p>
+                            <button><a href="#">Lire plus</a></button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <img src="image/pub (3).jpg" alt="">
+                        <div class="pub-details">
+                            <span>Juillet, 21 2021</span>
+                            <h3> L'ardeur de la passion </h3>
+                            <p>On ne peut pas s'intéresser à l'attrait et la persuasion(c'est-à-dire marketing et
+                                vente) sans parler de passion. Quant au passionné, l'objet de notre passion nous
+                                tient beaucoup à coeur, au point qu'on y pense constamment.</p>
+                            <button><a href="#">Lire plus</a></button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <img src="image/pub (4).jpg" alt="">
+                        <div class="pub-details">
+                            <span>Septembre, 15 2021</span>
+                            <h3> Nous sommes tous des <i>ENTREPRENEURS</i> </h3>
+                            <p>Dans notre précédente chronique, nous avions conclu que toute personne qui gagne de
+                                l'argent par sa force physique, ses connaissances,ses compétences ou son expertise
+                                est un entrepreneur.</p>
+                            <button><a href="#">Lire plus</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next swipper-navBtn"></div>
+                <div class="swiper-button-prev swipper-navBtn"></div>
+                <!-- <div class="swiper-pagination"></div> -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="link-footer">
+            <h1>Liens utiles</h1>
+            <h3><a href="#accueil">&rarr; Accueil</a></h3>
+            <h3><a href="#about">&rarr; A propos</a></h3>
+            <h3><a href="#resume">&rarr; Parcours</a></h3>
+            <h3><a href="#services">&rarr; Services</a></h3>
+            <h3><a href="#contact">&rarr; Contact</a></h3>
+        </div>
+        <div class="about-footer">
+            <h1>A propos de moi</h1>
+            <blockquote>
+                <h3>" Il faut de l'amour pour créer, de l'audace pour oser et s'engager, du courage pour maintenir le
+                    cap et de l'humilité pour célébrer les résultats "</h3>
+                <cite>
+                    <h2>AJS</h2>
+                </cite>
+            </blockquote>
+            <div class="footer-link">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="services-footer">
+            <h1>Services</h1>
+            <h3>&rarr; BUSINESS DEVELOPMENT</h3>
+            <h3>&rarr; CONSEILS & COACHING</h3>
+            <h3>&rarr; STRATEGIQUE NEGOCE</h3>
+            <h3>&rarr; INTELLIGENCE ECONOMIQUE</h3>
+            <h3>&rarr; ETUDES & ENQUETES</h3>
+            <h3>&rarr; MARKETING ET STRATÉGIES</h3>
+        </div>
+        <div class="adress-footer">
+            <h1>Vous avez des questions?</h1>
+            <h3>01 BP: 4150 <br>RP Cotonou</h3>
+            <h3> <i class="fas fa-phone"></i> (229)97 600 121 / 95 746 747</h3>
+            <h3> <i class="far fa-envelope"></i> <a href="mailto:joelantime@gmail.com">joelantime@gmail.com</a></h3>
+        </div>
+    </footer>
+
+    <script src="script/app.js"></script>
+    <script src="script/cdn.jsdelivr.net_npm_swiper@10.3.1_swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".slide-container", {
+            // slidesPerView: 3,
+            spaceBetween: 20,
+            slidesPerGroup: 2,
+            loop: true,
+            speed: 1000,
+            centeredSlides: false,
+            grabCursor: true,
+            // autoplay:{
+            //   delay:2000,
+            // }
+            keyboard: {
+                enabled: true,
+            },
+            breakpoints: {
+                // 769: {
+                //   slidesPerView: 3,
+                //   slidesPerGroup: 2,
+                // },
+                320: {
+                    slidesPerView: 1,
+                },
+                480: {
+                    slidesPerView: 2,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
+            },
+            scrollbar: {
+                el: ".swiper-scrollbar",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                dynamicBullets: true,
+            },
+        });
+
+    </script>
+
+</body>
+
+</html>
