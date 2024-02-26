@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<style>
+    #contact {
+        width: 100%;
+        height: 100%;
+        /* border: 1px solid white; */
+    }
+
+    #contact .container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 30px;
+    }
+
+    #contact .container:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        z-index: -1;
+    }
+
+    .contact-box {
+        max-width: 900px;
+        border-radius: 15px;
+        display: grid;
+        flex-wrap: wrap;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #fff;
+        box-shadow: 0px 0px 25px 4px rgba(0, 0, 0, .19);
+    }
+
+    .contact-box .left {
+        background: url(image/sossa.jpg) no-repeat center;
+        background-size: cover;
+        height: 100%;
+        border-radius: 15px 0px 0px 15px;
+    }
+
+    .contact-box .right {
+        padding: 25px 30px;
+    }
+
+    .contact-box .right h2 {
+        position: relative;
+        padding: 0 0 10px;
+        margin-bottom: 10px;
+        color: #7868e6;
+    }
+
+    .contact-box .right h2:after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        height: 4px;
+        width: 50px;
+        border-radius: 2px;
+        background-color: #7868e6;
+    }
+
+    .field {
+        width: 100%;
+        border: 2px solid rgba(0, 0, 0, 0);
+        border-radius: 6px;
+        padding: 12px 0;
+        outline: none;
+        background-color: rgba(230, 230, 230, .6);
+        padding: 1rem, 1rem;
+        font-size: 1.1rem;
+        margin-bottom: 22px;
+        transition: 0.3s;
+        text-indent: 5px;
+    }
+
+    .field:hover {
+        background-color: rgba(0, 0, 0, .1);
+    }
+
+    textarea {
+        min-height: 150px;
+        resize: none;
+    }
+
+    .contact-box .btn {
+        border-radius: 6px;
+        width: 100%;
+        padding: 0.8rem 1rem;
+        background-color: #7868e6;
+        color: #fff;
+        font-size: 1.1rem;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .contact-box .btn:hover {
+        background-color: #7968e6ca;
+    }
+
+    .field:focus {
+        border: 2px solid rgba(30, 85, 250, 0.47);
+        background: #fff;
+    }
+
+    ::placeholder {
+        padding: 3px 10px;
+        font-size: 16px;
+    }
+</style>
+
+<body>
+    <header>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html" class="active">Accueil</a></li>
+                <li><a href="about.html">A propos</a></li>
+                <li><a href="resume.html">Parcours</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger"></div>
+    </header>
+
+    <!-- <section id="contact">
+        <h1><strong class="maj">M</strong>e <strong>C</strong>ontacter</h1>
+        <div class="infocontact">
+            <div class="adress">
+                <img src="image/ma-position.png" alt="" width="70px" height="70px">
+                <h2>ADRESSE</h2>
+                <p>01 BP: 4150 <br> RP Cotonou</p>
+            </div>
+            <div class="contactnumber">
+                
+                <img src="image/appel.png" alt="" width="70px" height="70px">
+                <h2>TÉLÉPHONE</h2>
+                <p>(229)97 600 121 / 95 746 747 </p>
+            </div>
+            <div class="email">
+                
+                <img src="image/email.png" alt="" width="70px" height="70px">
+                <h2>ADRESSE EMAIL</h2>
+                <p><a href="mailto:joelantime@gmail.com">joelantime@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="cardimg">
+                <img src="image/sossa.jpg" alt="">
+            </div>
+            <div class="form-contact">
+                <form action="" method="post">
+                    <label for="">Nom</label>
+                    <input type="text" name="" id="">
+
+                    <label for="">Email</label>
+                    <input type="email" name="" id="">
+
+                    <label for="">Message</label>
+                    <textarea name="" id="" placeholder="Entrez votre message"></textarea>
+
+                    <button type="submit">ENVOYER</button>
+                </form>
+            </div>
+        </div>
+    </section> -->
+
+
+    <section id="contact">
+        <div class="container">
+            <div class="contact-box">
+                <div class="left"></div>
+                <div class="right">
+                    <h2>Contact </h2>
+                    <input type="text" class="field" placeholder="Nom">
+                    <input type="text" class="field" placeholder="Email">
+                    <input type="text" class="field" placeholder="Téléphone">
+                    <textarea class="field" placeholder="Message"></textarea>
+                    <button class="btn">Envoyer</button>
+                </div>
+            </div>
+        </div>
+        <div class="infocontact">
+            <div class="adress">
+                <img src="image/ma-position.png" alt="" width="70px" height="70px">
+                <h2>ADRESSE</h2>
+                <p>01 BP: 4150 <br> RP Cotonou</p>
+            </div>
+            <div class="contactnumber">
+                
+                <img src="image/appel.png" alt="" width="70px" height="70px">
+                <h2>TÉLÉPHONE</h2>
+                <p>(229)97 600 121 / 95 746 747 </p>
+            </div>
+            <div class="email">
+                
+                <img src="image/email.png" alt="" width="70px" height="70px">
+                <h2>ADRESSE EMAIL</h2>
+                <p><a href="mailto:joelantime@gmail.com">joelantime@gmail.com</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="link-footer">
+            <h1>Liens utiles</h1>
+            <h3><a href="#accueil">&rarr; Accueil</a></h3>
+            <h3><a href="#about">&rarr; A propos</a></h3>
+            <h3><a href="#resume">&rarr; Parcours</a></h3>
+            <h3><a href="#services">&rarr; Services</a></h3>
+            <h3><a href="#contact">&rarr; Contact</a></h3>
+        </div>
+        <div class="about-footer">
+            <h1>A propos de moi</h1>
+            <blockquote>
+                <h3>" Il faut de l'amour pour créer, de l'audace pour oser et s'engager, du courage pour maintenir le
+                    cap et de l'humilité pour célébrer les résultats "</h3>
+                <cite>
+                    <h2>AJS</h2>
+                </cite>
+            </blockquote>
+            <div class="footer-link">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="services-footer">
+            <h1>Services</h1>
+            <h3>&rarr; BUSINESS DEVELOPMENT</h3>
+            <h3>&rarr; CONSEILS & COACHING</h3>
+            <h3>&rarr; STRATEGIQUE NEGOCE</h3>
+            <h3>&rarr; INTELLIGENCE ECONOMIQUE</h3>
+            <h3>&rarr; ETUDES & ENQUETES</h3>
+            <h3>&rarr; MARKETING ET STRATÉGIES</h3>
+        </div>
+        <div class="adress-footer">
+            <h1>Vous avez des questions?</h1>
+            <h3>01 BP: 4150 <br>RP Cotonou</h3>
+            <h3> <i class="fas fa-phone"></i> (229)97 600 121 / 95 746 747</h3>
+            <h3> <i class="far fa-envelope"></i> <a href="mailto:joelantime@gmail.com">joelantime@gmail.com</a></h3>
+        </div>
+    </footer>
+
+    <script src="script/app.js"></script>
+</body>
+
+</html>
